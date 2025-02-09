@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgb(225, 225, 225);
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(230, 230, 230);
+    --foreground: black;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: inter;
+}
+
+.mainContainer {
+  display: flex;
+}
+
+.subContainer {
+  width: 100%;
+}

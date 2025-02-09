@@ -1,0 +1,117 @@
+.mainContainer {
+  padding: 0px 24px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cardHeaderContainer {
+  padding: 24px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.cardHeader {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.avatarContainer {
+  width: 40px;
+  height: 40px;
+}
+
+.avatarContainer img {
+  width: 40px;
+  height: 40px;
+}
+
+.cardDataContainer {
+  padding: 24px;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+}
+
+.patientName {
+  font-weight: 600;
+}
+
+.patientNote {
+  color: gray;
+}
+
+.cardDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.DataEntryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 15px;
+  color: gray;
+}
+
+.timeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #daeafe;
+  border-radius: 6px;
+}
+
+.timeStamp {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.statusText {
+  font-size: 12px;
+  color: green;
+}
+
+.pendingStatusText {
+  font-size: 12px;
+  color: #716800;
+}
+
+.statusPill {
+  background-color: #dcfce7;
+  padding: 4px 14px;
+  border-radius: 16px;
+}
+
+.pendingStatusPill {
+  background-color: #fef9c3;
+  padding: 4px 14px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .cardsContainer {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

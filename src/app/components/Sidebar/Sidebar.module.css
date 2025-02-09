@@ -1,0 +1,94 @@
+.sidebarContainer {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 330px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.headerContainer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.header {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.sidebarMenuContainer {
+  width: 100%;
+  padding: 6px;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebarMenu {
+  height: 290px;
+}
+
+.sidebarMenuList {
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 8px;
+}
+
+.sidebarMenuListItem {
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  align-items: center;
+  color: #525252;
+  transition: background-color 0.3s ease;
+}
+
+.sidebarMenuListItem:hover {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebarBottom {
+  height: 135px;
+  width: 100%;
+  border-top: 1px solid rgb(240, 240, 240);
+  overflow-x: hidden;
+  padding: 15px 0px 5px 10px;
+}
+
+.sidebarBottomContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatarContainer {
+  width: 35px;
+  height: 35px;
+}
+
+.avatarImage {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.accountRole {
+  font-size: 12px;
+  color: gray;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebarContainer {
+    display: none;
+  }
+}

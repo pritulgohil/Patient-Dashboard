@@ -1,0 +1,36 @@
+.navbar {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbarContainer {
+  padding: 16px 16px 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbarHeader {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.navbarButton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatarButton {
+  width: 35px;
+  height: 35px;
+}
+
+.avatarButtonImage {
+  width: 35px;
+  height: 35px;
+}

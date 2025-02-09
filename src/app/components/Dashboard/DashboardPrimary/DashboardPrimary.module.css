@@ -1,0 +1,62 @@
+.cardsContainer {
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  width: 25%;
+  padding: 24px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+.iconContainer1 {
+  padding: 14px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #daeafe;
+}
+
+.iconContainer2 {
+  padding: 14px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #dcfce7;
+}
+
+.iconContainer3 {
+  padding: 14px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #f3e8ff;
+}
+
+.iconContainer4 {
+  padding: 14px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #fef9c3;
+}
+
+.cardTitle {
+  font-size: 14px;
+  color: gray;
+}
+
+.cardData {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .cardsContainer {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
