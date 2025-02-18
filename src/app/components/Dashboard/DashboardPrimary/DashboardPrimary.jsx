@@ -1,8 +1,12 @@
+"use client";
 import styles from "./DashboardPrimary.module.css";
+import { useScroll } from "@/app/context/ScrollContext";
 
 const DashboardPrimary = () => {
+  const { sectionRefs } = useScroll();
+
   return (
-    <div className={styles.mainContainer}>
+    <div ref={sectionRefs.dashboard} className={styles.mainContainer}>
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
           <div className={styles.leftSide}>

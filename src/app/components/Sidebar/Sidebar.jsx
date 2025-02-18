@@ -1,6 +1,10 @@
+"use client";
 import styles from "./Sidebar.module.css";
+import { useScroll } from "@/app/context/ScrollContext";
 
 const Sidebar = () => {
+  const { scrollTo } = useScroll();
+
   return (
     <>
       <div className={styles.sidebarContainer}>
@@ -12,7 +16,10 @@ const Sidebar = () => {
         <div className={styles.sidebarMenuContainer}>
           <div className={styles.sidebarMenu}>
             <ul className={styles.sidebarMenuList}>
-              <li className={styles.sidebarMenuListItem}>
+              <li
+                className={styles.sidebarMenuListItem}
+                onClick={() => scrollTo("dashboard")}
+              >
                 <svg
                   class="w-5 h-5 mr-2"
                   fill="none"
@@ -28,7 +35,10 @@ const Sidebar = () => {
                 </svg>
                 Dashboard
               </li>
-              <li className={styles.sidebarMenuListItem}>
+              <li
+                className={styles.sidebarMenuListItem}
+                onClick={() => scrollTo("patient")}
+              >
                 <svg
                   class="w-5 h-5 mr-2"
                   fill="none"
@@ -44,7 +54,10 @@ const Sidebar = () => {
                 </svg>
                 Patient
               </li>
-              <li className={styles.sidebarMenuListItem}>
+              <li
+                className={styles.sidebarMenuListItem}
+                onClick={() => scrollTo("schedule")}
+              >
                 <svg
                   class="w-5 h-5 mr-2"
                   fill="none"
@@ -60,7 +73,10 @@ const Sidebar = () => {
                 </svg>
                 Schedule
               </li>
-              <li className={styles.sidebarMenuListItem}>
+              <li
+                className={styles.sidebarMenuListItem}
+                onClick={() => scrollTo("medical")}
+              >
                 <svg
                   class="w-5 h-5 mr-2"
                   fill="none"
@@ -76,7 +92,10 @@ const Sidebar = () => {
                 </svg>
                 Records
               </li>
-              <li className={styles.sidebarMenuListItem}>
+              <li
+                className={styles.sidebarMenuListItem}
+                onClick={() => scrollTo("billing")}
+              >
                 <svg
                   class="w-5 h-5 mr-2"
                   fill="none"

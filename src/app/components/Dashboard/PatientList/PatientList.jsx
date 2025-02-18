@@ -1,8 +1,13 @@
+"use client";
 import styles from "./PatientList.module.css";
+import { useScroll } from "@/app/context/ScrollContext";
+
 const PatientList = () => {
+  const { sectionRefs } = useScroll();
+
   return (
     <>
-      <div className={styles.mainContainer}>
+      <div ref={sectionRefs.patient} className={styles.mainContainer}>
         <div className={styles.headerContainer}>
           <div className={styles.headerLeft}>
             <h2 className={styles.sectionHeader}>Patients List</h2>
